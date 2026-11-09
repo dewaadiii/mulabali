@@ -2,7 +2,7 @@
 # >>> Ganti GANTI-USERNAME dengan nama akun GitHub Anda <<<
 backend:
   name: github
-  repo: GANTI-USERNAME/mulabali
+  repo: dewaadiii/mulabali
   branch: main
   base_url: https://api.netlify.com
   commit_messages:
