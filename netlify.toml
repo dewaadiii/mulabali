@@ -1,0 +1,91 @@
+# Mula Bali Bamboo Villas — pengaturan Netlify
+# Website statis: tidak ada proses build, langsung tayang dari folder ini.
+[build]
+  publish = "."
+  command = ""
+
+# ------------------------------------------------------------
+# Satu alamat resmi: https://mulabalibamboovillas.com
+# (www dan alamat lama .netlify.app dialihkan permanen ke sini)
+# ------------------------------------------------------------
+[[redirects]]
+  from = "https://www.mulabalibamboovillas.com/*"
+  to = "https://mulabalibamboovillas.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.mulabalibamboovillas.com/*"
+  to = "https://mulabalibamboovillas.com/:splat"
+  status = 301
+  force = true
+
+# NYALAKAN SETELAH mulabalibamboovillas.com SUDAH BISA DIBUKA:
+# hapus tanda # di 5 baris di bawah ini (lewat GitHub → netlify.toml → Edit).
+# [[redirects]]
+#   from = "https://mulabali.netlify.app/*"
+#   to = "https://mulabalibamboovillas.com/:splat"
+#   status = 301
+#   force = true
+
+# File pengaturan & catatan tidak perlu bisa dibuka orang lain
+[[redirects]]
+  from = "/netlify.toml"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/BACA-SAYA.txt"
+  to = "/404.html"
+  status = 404
+  force = true
+
+# ------------------------------------------------------------
+# Keamanan untuk SEMUA halaman
+# ------------------------------------------------------------
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Wajib HTTPS selama 1 tahun (browser tidak akan pernah pakai http lagi)
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains"
+    # Website tidak boleh disisipkan diam-diam ke situs lain (anti-clickjacking)
+    X-Frame-Options = "DENY"
+    # Browser tidak boleh menebak jenis file (mencegah file disalahgunakan jadi script)
+    X-Content-Type-Options = "nosniff"
+    # Saat tamu klik link keluar, alamat lengkap halaman tidak ikut terkirim
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    # Kamera, mikrofon, lokasi, dll. tidak dipakai — matikan
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()"
+    Cross-Origin-Opener-Policy = "same-origin-allow-popups"
+
+# Halaman utama: hanya boleh memuat kode dari sumber yang memang dipakai
+[[headers]]
+  for = "/"
+  [headers.values]
+    Content-Security-Policy = "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src 'self'; frame-src https://maps.google.com https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests"
+
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Content-Security-Policy = "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src 'self'; frame-src https://maps.google.com https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests"
+
+# Halaman admin: tidak muncul di Google, tidak disimpan di cache
+[[headers]]
+  for = "/admin/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+    Cache-Control = "no-store"
+    Referrer-Policy = "same-origin"
+
+# Isi website selalu yang terbaru setelah diubah lewat admin
+[[headers]]
+  for = "/content/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# Foto boleh disimpan browser 1 minggu (website terasa lebih cepat)
+[[headers]]
+  for = "/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"

@@ -1,0 +1,47 @@
+MULA BALI BAMBOO VILLAS — WEBSITE + HALAMAN ADMIN
+Alamat resmi : https://mulabalibamboovillas.com
+Halaman admin: https://mulabalibamboovillas.com/admin
+=================================================
+
+Panduan lengkap bergambar ada di dokumen "Panduan Lengkap Website Mula Bali"
+di claude.ai. Ringkasannya:
+
+ALUR
+  Rumahweb  = tempat beli nama domain (alamat)
+  GitHub    = lemari tempat menyimpan file website (repo PRIVATE)
+  Netlify   = yang menayangkan website, otomatis ambil dari GitHub
+  /admin    = ubah isi website tanpa coding → tersimpan ke GitHub
+              → Netlify memperbarui website ±1 menit
+
+URUTAN SETUP (sekali saja)
+  1. GitHub   : buat repo "mulabali" (Private) → upload SEMUA isi folder ini
+  2. GitHub   : admin/config.yml → ganti GANTI-USERNAME dengan nama akun GitHub
+  3. Netlify  : sambungkan situs "mulabali" ke repo GitHub "mulabali"
+  4. Netlify  : Domain management → tambah mulabalibamboovillas.com
+  5. Rumahweb : DNS → A  @   → 75.2.60.5
+                      CNAME www → mulabali.netlify.app
+  6. GitHub   : buat OAuth App (kunci login admin)
+                Homepage URL : https://mulabalibamboovillas.com
+                Callback URL : https://api.netlify.com/auth/done
+  7. Netlify  : Security → OAuth → Install provider → GitHub → tempel kunci
+  8. Setelah .com bisa dibuka: netlify.toml → hapus tanda # pada 5 baris
+     pengalihan mulabali.netlify.app (lihat petunjuk di file itu)
+
+KEAMANAN YANG SUDAH TERPASANG DI FILE
+  • HTTPS wajib, www & http otomatis ke https://mulabalibamboovillas.com
+  • Website tidak bisa disisipkan ke situs lain (anti-clickjacking)
+  • Website hanya boleh memuat kode dari dirinya sendiri + Google Fonts/Maps
+  • Link & foto yang diisi di admin disaring (link berbahaya diabaikan)
+  • Halaman /admin tidak muncul di Google
+  • Versi sistem admin dikunci (tidak berubah sendiri tanpa diuji)
+  • netlify.toml & BACA-SAYA.txt tidak bisa dibuka pengunjung
+
+KEAMANAN YANG HARUS ANDA NYALAKAN
+  • Verifikasi 2 langkah (2FA) di: Gmail, GitHub, Netlify, Rumahweb
+  • Rumahweb: nyalakan kunci domain (Domain Lock / Theft Protection)
+  • Repo GitHub tetap PRIVATE; tambah staf hanya lewat Settings → Collaborators
+  • Client Secret GitHub JANGAN dikirim ke siapa pun (termasuk lewat chat),
+    hanya ditempel di Netlify
+
+Catatan: link yang dikosongkan (mis. TikTok/Airbnb) tidak ditampilkan.
+Harga yang dikosongkan tampil "On request". Foto dari HP otomatis dikecilkan.

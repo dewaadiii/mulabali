@@ -1,0 +1,84 @@
+{
+  "kicker": "Plan your stay",
+  "title": "Add to your stay",
+  "subtitle": "Choose your dates, add the little extras that make it yours, and send us your request in one tap.",
+  "addons": [
+    {
+      "name": "Airport transfer",
+      "desc": "Private car between Ngurah Rai Airport and the villa.",
+      "detail": "",
+      "unit": "per trip",
+      "price": null,
+      "mode": "qty",
+      "max": 2,
+      "image": "/img/addon-airport-transfer.jpg",
+      "pos": "center 60%"
+    },
+    {
+      "name": "Floating breakfast",
+      "desc": "A tropical breakfast served in your private pool.",
+      "detail": "",
+      "unit": "per person",
+      "price": null,
+      "mode": "guest",
+      "max": null,
+      "image": "/img/addon-floating-breakfast.jpg",
+      "pos": "center 60%"
+    },
+    {
+      "name": "Balinese massage",
+      "desc": "A 60-minute traditional massage in the villa.",
+      "detail": "",
+      "unit": "per person",
+      "price": null,
+      "mode": "guest",
+      "max": null,
+      "image": "/img/addon-balinese-massage.jpg",
+      "pos": "center 40%"
+    },
+    {
+      "name": "Candlelight dinner",
+      "desc": "A private candlelit dinner for two under the stars.",
+      "detail": "",
+      "unit": "per stay",
+      "price": null,
+      "mode": "once",
+      "max": null,
+      "image": "/img/addon-candlelight-dinner.jpg",
+      "pos": "center 60%"
+    },
+    {
+      "name": "Flower jacuzzi",
+      "desc": "Your jacuzzi filled with fresh tropical flowers, overlooking the rice terraces.",
+      "detail": "",
+      "unit": "per stay",
+      "price": null,
+      "mode": "once",
+      "max": null,
+      "image": "/img/addon-flower-jacuzzi.jpg",
+      "pos": "center 80%"
+    },
+    {
+      "name": "Rice terrace walk",
+      "desc": "A guided walk through the Sidemen valley, with Mount Agung on the horizon.",
+      "detail": "",
+      "unit": "per person",
+      "price": null,
+      "mode": "guest",
+      "max": null,
+      "image": "/img/addon-rice-terrace-walk.jpg",
+      "pos": "center"
+    },
+    {
+      "name": "Photo shoot",
+      "desc": "A professional photographer captures your stay at the villa and the rice terraces.",
+      "detail": "",
+      "unit": "per session",
+      "price": null,
+      "mode": "once",
+      "max": null,
+      "image": "/img/addon-photo-shoot.jpg",
+      "pos": "center 40%"
+    }
+  ]
+}

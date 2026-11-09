@@ -1,0 +1,76 @@
+{
+  "kicker": "Gallery",
+  "title": "Every corner, handcrafted",
+  "text": "Sculpted bamboo, a copper bathtub, a private pool and endless rice terraces with Mount Agung on the horizon. Tap any photo to view it full size.",
+  "photos": [
+    {
+      "image": "/img/pool-mount-agung.jpg",
+      "caption": "Pool & Mount Agung",
+      "alt": "Villa and glowing pool with Mount Agung behind",
+      "tall": true,
+      "pos": "center"
+    },
+    {
+      "image": "/img/copper-bathtub.jpg",
+      "caption": "Copper bathtub",
+      "alt": "Copper bathtub beside a sculpted bamboo window",
+      "tall": false,
+      "pos": "center"
+    },
+    {
+      "image": "/img/blue-hour.jpg",
+      "caption": "Blue hour by the pool",
+      "alt": "Villa and pool at blue hour",
+      "tall": false,
+      "pos": "center"
+    },
+    {
+      "image": "/img/bamboo-roof.jpg",
+      "caption": "Bamboo architecture",
+      "alt": "Curved bamboo roof above green rice terraces",
+      "tall": true,
+      "pos": "center"
+    },
+    {
+      "image": "/img/sunset-walkway.jpg",
+      "caption": "Sunset walkway",
+      "alt": "Lantern-lit walkway overlooking rice fields at sunset",
+      "tall": false,
+      "pos": "center 70%"
+    },
+    {
+      "image": "/img/evening-deck.jpg",
+      "caption": "Evening deck",
+      "alt": "Curved bamboo railing and deck at night",
+      "tall": false,
+      "pos": "center"
+    },
+    {
+      "image": "/img/dining-stair.jpg",
+      "caption": "Dining & spiral stair",
+      "alt": "Bamboo dining table and spiral stair",
+      "tall": true,
+      "pos": "center"
+    },
+    {
+      "image": "/img/upstairs-bedroom.jpg",
+      "caption": "Upstairs bedroom",
+      "alt": "Canopy bed under the woven bamboo roof",
+      "tall": false,
+      "pos": "center"
+    },
+    {
+      "image": "/img/morning-swim.jpg",
+      "caption": "Morning swim",
+      "alt": "Private pool overlooking the rice fields",
+      "tall": false,
+      "pos": "center"
+    }
+  ],
+  "tour": {
+    "kicker": "Virtual Tour 360°",
+    "title": "Walk through the villa before you arrive",
+    "text": "Drag or swipe to look around the villa, zoom in on the details, or open it full screen.",
+    "image": "/img/tour-360.jpg"
+  }
+}

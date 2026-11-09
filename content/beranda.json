@@ -1,0 +1,70 @@
+{
+  "hero": {
+    "kicker": "Selat · Karangasem · Bali",
+    "title1": "Mula Bali",
+    "title2": "Bamboo Villas",
+    "subtitle": "A private luxury bamboo villa in the quiet hills of East Bali – built from the earth, made for slow days.",
+    "image": "/img/hero.jpg"
+  },
+  "about": {
+    "kicker": "What is Mula Bali",
+    "title": "Rooted in nature, crafted from bamboo",
+    "paragraphs": [
+      "\"Mula\" means origin – the root of things. Mula Bali is a single luxury villa in Selat, Karangasem, where bamboo architecture, terracotta tones and mountain air come together in one quiet retreat.",
+      "[Tambahkan cerita singkat tentang villa: pemandangan, fasilitas utama, pengalaman tamu.]"
+    ],
+    "stats": [
+      {
+        "number": "1",
+        "label": "Private luxury villa"
+      },
+      {
+        "number": "2",
+        "label": "Bedrooms, upper & lower"
+      },
+      {
+        "number": "4",
+        "label": "Guests maximum"
+      }
+    ],
+    "max_guests": 4,
+    "slides": [
+      {
+        "image": "/img/egg-window.jpg",
+        "caption": "The egg window",
+        "alt": "Egg-shaped bamboo window framing Mount Agung beside the copper bathtub",
+        "pos": "center 40%"
+      },
+      {
+        "image": "/img/sunset-walkway.jpg",
+        "caption": "Sunset walkway",
+        "alt": "Lantern-lit walkway overlooking rice fields at sunset",
+        "pos": "center 60%"
+      },
+      {
+        "image": "/img/upstairs-bedroom.jpg",
+        "caption": "Upstairs bedroom",
+        "alt": "Canopy bed under the woven bamboo roof",
+        "pos": "center"
+      },
+      {
+        "image": "/img/morning-swim.jpg",
+        "caption": "Morning swim",
+        "alt": "Private pool overlooking the rice fields",
+        "pos": "center 60%"
+      },
+      {
+        "image": "/img/copper-bathtub.jpg",
+        "caption": "Copper bathtub",
+        "alt": "Copper bathtub beside a sculpted bamboo window",
+        "pos": "center"
+      },
+      {
+        "image": "/img/bamboo-roof.jpg",
+        "caption": "Bamboo architecture",
+        "alt": "Curved bamboo roof above green rice terraces",
+        "pos": "center"
+      }
+    ]
+  }
+}

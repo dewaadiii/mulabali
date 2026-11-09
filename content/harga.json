@@ -1,0 +1,34 @@
+{
+  "kicker": "Rates",
+  "title": "Stay longer, pay less",
+  "subtitle": "Book 3 nights or more and enjoy our special long-stay rate with added inclusions.",
+  "standard": {
+    "label": "Standard stay",
+    "nights": "1 – 2 nights",
+    "price": 20000000,
+    "features": [
+      "Entire villa, up to 4 guests",
+      "2 bedrooms, upper & lower",
+      "Private pool & copper bathtub",
+      "[Fasilitas termasuk]"
+    ],
+    "image": "/img/evening-deck.jpg",
+    "button": "Book standard"
+  },
+  "long": {
+    "label": "Long stay",
+    "nights": "3 nights or more",
+    "min_nights": 3,
+    "price": null,
+    "badge": "Best value",
+    "features": [
+      "Everything in standard stay",
+      "Special long-stay nightly rate",
+      "[Bonus, mis. sarapan / airport transfer]",
+      "[Bonus lainnya]"
+    ],
+    "image": "/img/pool-mount-agung.jpg",
+    "button": "Book 3+ nights"
+  },
+  "note": "Rates are per night for the entire villa. [Catatan: sudah/belum termasuk pajak & service]"
+}

@@ -1,0 +1,41 @@
+{
+  "kicker": "How to book",
+  "title": "Reserve in three simple steps",
+  "steps": [
+    {
+      "title": "Choose your dates",
+      "text": "Pick your check-in and check-out. Stay 3 nights or more to unlock the long-stay rate."
+    },
+    {
+      "title": "Pick your platform",
+      "text": "Book securely through the trusted platform you prefer, or message us directly."
+    },
+    {
+      "title": "Get confirmed",
+      "text": "Receive your confirmation and arrival details. We will be ready to welcome you."
+    }
+  ],
+  "platforms": [
+    {
+      "name": "Booking.com",
+      "url": "https://www.booking.com/Share-egEUQE"
+    },
+    {
+      "name": "Agoda",
+      "url": "https://share.google/1KfWppMCk1wM1W4pu"
+    },
+    {
+      "name": "Airbnb",
+      "url": ""
+    }
+  ],
+  "wa_button": "WhatsApp us",
+  "location": {
+    "kicker": "Location",
+    "title": "Find us in Selat",
+    "text": "Tucked into the green hills of Karangasem, East Bali, with Mount Agung on the horizon.",
+    "address": "Mula Bali Bamboo Villas\nJl. Usaha Tani, Selat, Kec. Selat\nKabupaten Karangasem, Bali 80862",
+    "maps_url": "https://maps.app.goo.gl/PRVVSxzqcifcxRFF7",
+    "map_search": "Mula Bali Bamboo Villas, HF5G+GMM, Jl. Usaha Tani, Selat, Karangasem, Bali 80862"
+  }
+}
